@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hablemos de mascotas</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <!-- Incluir la librería de EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Inicializar EmailJS con tu User ID -->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script>
+        emailjs.init('y5dQNW2etqwxi2G7k'); // Reemplaza 'YOUR_USER_ID' con tu verdadero ID de usuario
+    </script>
+</head>
+
+<body>
+    <!-- INAVEGACION-->
+    <section>
+        <header class="header-content">
+            <nav class="header-nav ">
+                <div class="logo"><a href="#"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWhHbM43osXkVf5B_Qyvk2KnjOuPgN2R_u2A&s"
+                            class="imagen-logo"></a></div>
+                <button class="nav-toggle" aria-label="abrir menu">
+                    <img src="imagenes/menu.png" class="nav-icon">
+                </button>
+                <ul class="nav-menu nav-menu-visible">
+                    <li class="nav-menu-item"><a href="#sobre-nosotros" class="nav-menu-link nav-link ">sobre
+                            nosotros</a></li>
+                    <li class="nav-menu-item"><a href="#contactos-redes-sociales" class="nav-menu-link nav-link">redes sociales</a></li>
+                    <li class="nav-menu-item"><a href="#formulario-pagina " class="nav-menu-link nav-link">inscribirme
+                        </a></li>
+                    <li class="nav-menu-item"><a href="#contactos-redes-sociales"
+                            class="nav-menu-link nav-link nav-menu-link_active">Contactos</a></li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+        </header>
+
+        <!-- Imagen de inicio -->
+        <img src="https://img.freepik.com/fotos-premium/perros-gatos-que-miran-escondidas-sobre-banner-tienda-mascotas-linea-superior-azul-claro-solido-sonrisa-feliz-imagen-ia-generativa-divertida-weber_31965-192244.jpg"
+            alt="Curso de JavaScript" class="hero-image">
+    </section>
+    <section id="sobre-nosotros">
+        <div class="contenedor-conceptos ">
+            <h2 class="texto-conceptos1">¿Quines somos?</h2>
+            <p class="texto-conceptos2">
+                Somos un grupo de personas dispuestas a contribuir con
+                el bienestar de los animles para que tengan un hogar digno y sean tratados con respeto.
+                Si tienes una mascota debes tener presente que es una gran responsablidad
+                no son objetos, son seres vivo.
+                Tenemos mas de 40 años en pie de esta vision y hemos ayudado a mas de 20,000
+                mascotas abandonadas
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="informacion ">
+        <div class="textos-con-informacion">
+
+            <div class="contenedores">
+                <p class="encabezado"> Mision</p>
+                <p class="texto-informativo1 "> Hola queremos promover el amor
+                    hacia los animales que cada dia encuentres personas que enteindan que los animales merecen
+                    ser tartados con amor
+                </p>
+            </div>
+            <div class="contenedores">
+                <p class="encabezado"> vision
+                <p class="texto-informativo1 "> Hola queremos promover el amor
+                    hacia los animales que cada dia encuentres personas que enteindan que los animales merecen
+                    ser tartados con amor
+                </p>
+            </div>
+            <div class="contenedores">
+                <p class="encabezado"> objetivos
+                <p class="texto-informativo1 "> Hola queremos promover el amor
+                    hacia los animales que cada dia encuentres personas que enteindan que los animales merecen
+                    ser tartados con amor
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de fotos -->
+    <section id="carrusel">
+        <div class="galeria ">
+            <div class=" gallery"><img
+                    src="https://www.shutterstock.com/image-photo/portrait-happy-puppy-jack-russell-600nw-2499514835.jpg"
+                    class="carousel-slide"></div>
+            <div class=" gallery"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVWdPGBk77A2FGeTZsdjZ6oNZ0ewrogcN6Eg&s"
+                    class="carousel-slide"></div>
+            <div class=" gallery"><img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC6aHx6HEV2PcNXTSW-LMTuD5kFDdzpu3dfQ&s"
+                    class="carousel-slide"></div>
+        </div>
+    </section>
+    <!-- Formulario -->
+    <section id="formulario-pagina ">
+        <div class="formulario">
+            <h2>Inscribete al equipo</h2>
+            <form id="form" action="javascript:void(0)">
+                <input class="input" type="email" id="email" name="email" placeholder="Tu correo" required>
+                <input class="input" type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <p for="asistencia">¿Formaras parte del equipo?</p>
+                    <select class="input" id="asistencia" name="asistencia">
+                        <option value="si">si</option>
+                        <option value="no">no</option>
+                        <option value="quizas">quizas</option>
+                    </select>
+                    <button class="enviar" type="submit" id="enviarFormulario">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+    <!-- constactos y redes sociales  -->
+    <section id="contactos-redes-sociales">
+        <div class="informacion-contacto">
+            <h2>Contactos ⬇️</h2>
+        </div>
+        <div class="contactos">
+            <div class="contactanos">
+                <h2 class="encuentranos">Visitanos</h2>
+                <div class="mini-content">
+                    <p class="facebook"> Gmail</p>
+                    <p class="direccion"> 📩mascotas@gmail.com</p>
+                </div>
+                <div class="mini-content">
+                    <p class="facebook">📞 Telefono:</p>
+                    <p class="direccion">+505 87653412</p>
+                </div>
+            </div>
+            <div class="contactanos">
+                <h2 class="encuentranos">Redes sociales</h2>
+                <div class="mini-content">
+                    <a class="facebook" href="https://www.facebook.com/manto.degracia">Facebook 👈</a>
+
+                </div>
+                <div class="mini-content">
+                    <p class="facebook"> Direccion</p>
+                    <p class="direccion"> Hotel miraflores 20 vrs sur 1 este
+                        Zona 8</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer -->
+    <section id="footer">
+        <footer class="footer-content">
+            <div class="footer-content">
+                <p>&copy; 2025 Hablemos de Mascotas. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Sobre nosotros</a>
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </footer>
+
+    </section>
+
+    <!-- Tu archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
