@@ -148,9 +148,8 @@ body {
         max-width: 400px; width: 90%; /* Hace que los elementos ocupen más espacio en móviles */
     }
     .imagen-logo {
-        max-width:50%;
+        max-width:30px;
         min-height: 40px;
-        background-color: #b74040;
     }
     .contenedor-conceptos {
         min-height: 380px;
