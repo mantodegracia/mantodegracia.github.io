@@ -1,22 +1,31 @@
 /* Estilos generales */
 * {
-    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    font-family: Arial, sans-serif,"Poppins" ;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: Arial, sans-serif, "Poppins";
     margin: 0;
     padding: 90px 20px 0;
     background-color: #f4f4f4;
-    align-items: center; /
+    align-items: center;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Estilos de barra de navegacion*/
 .header-content {
     width: 100%;
-    height: 80 px;
+    height: 80px;
     background-color: rgb(108, 154, 166);
     opacity: 0.8;
     position: fixed;
@@ -25,15 +34,13 @@ body {
 
 }
 
-
 .imagen-logo {
     width: 100%;
     height: 50px;
     padding-top: 20px;
     margin-left: 12px;
-   
-}
 
+}
 
 .nav-menu {
     display: flex;
@@ -61,23 +68,20 @@ body {
     border-radius: 3px;
 }
 
-.nav-menu-link:hover
-{
+.nav-menu-link:hover {
     background-color: rgb(97, 30, 25);
     transition: 0.5s;
 }
-
 
 
 .header-nav {
     display: flex;
     justify-content: space-between;
 
-
 }
 
 /* boton de navegacion  */
-.nav-toggle{
+.nav-toggle {
     background: none;
     border: none;
     font-size: 30px;
@@ -85,20 +89,27 @@ body {
     display: none;
     width: 30%;
 }
-.nav-icon{
+
+.nav-icon {
     width: 20%;
-    
+
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
     body {
         padding-top: 100px;
     }
+
     .header-content {
-        height: 60 px;
-    
+        height: 60px;
+
     }
-    
-    
+
+    #informacion {
+        margin-top: 20px;
+        /* Espaciado adecuado debajo del carrusel */
+    }
+
     .nav-menu {
         flex-direction: column;
         align-items: center;
@@ -115,46 +126,56 @@ body {
         left: 100%;
         transition: left 0.3s;
     }
-    
-    
+
+
     .nav-menu-item {
         line-height: 70px;
 
     }
-    
+
     .nav-menu-link {
         padding: 8px 12px;
         border-radius: 3px;
     }
-    
+
     .nav-menu-link:hover,
-    .nav-menu-link_active
-    {
+    .nav-menu-link_active {
         background: none;
         color: rgb(59, 138, 206);
     }
-    
+
     .textos-con-informacion {
         margin-top: 40px;
-        display: flex ;  /* Asegura que el contenedor use flex */
-        flex-direction: column ;  /* Forza la disposición en columna */
-        align-items: center ;  /* Centra los elementos */
-        justify-content: center;  /* Opcional, alinea verticalmente */
-        width: 100% ;
+        display: flex;
+        /* Asegura que el contenedor use flex */
+        flex-direction: column;
+        /* Forza la disposición en columna */
+        align-items: center;
+        /* Centra los elementos */
+        justify-content: center;
+        /* Opcional, alinea verticalmente */
+        width: 100%;
         height: 130px;
     }
 
-    .contenedores { width: 90% !important;  /* Asegura que los elementos ocupen todo el ancho */
-        max-width: 400px; width: 90%; /* Hace que los elementos ocupen más espacio en móviles */
+    .contenedores {
+        width: 90% !important;
+        /* Asegura que los elementos ocupen todo el ancho */
+        max-width: 400px;
+        width: 90%;
+        /* Hace que los elementos ocupen más espacio en móviles */
     }
+
     .imagen-logo {
-        max-width:30px;
+        max-width: 30px;
         min-height: 40px;
     }
+
     .contenedor-conceptos {
         min-height: 380px;
     }
-    .texto-conceptos2{
+
+    .texto-conceptos2 {
         margin-right: 40px;
         padding-top: 40px;
         color: rgb(103, 88, 88);
@@ -163,48 +184,71 @@ body {
         font-size: 20px;
         min-height: 170px;
         width: 100%;
-       
+
     }
-    
-    .contactos{
-        display: flex !important;  /* Asegura que el contenedor use flex */
-        flex-direction: column !important;  /* Forza la disposición en columna */
-        align-items: center !important;  /* Centra los elementos */
-        justify-content: center !important;  /* Opcional, alinea verticalmente */
+
+    .contactos {
+        display: flex !important;
+        /* Asegura que el contenedor use flex */
+        flex-direction: column !important;
+        /* Forza la disposición en columna */
+        align-items: center !important;
+        /* Centra los elementos */
+        justify-content: center !important;
+        /* Opcional, alinea verticalmente */
         width: 100% !important;
     }
-    .mini-content{
-        width: 90% !important;  /* Asegura que los elementos ocupen todo el ancho */
-            max-width: 400px; width: 90%; /* Hace que los elementos ocupen más espacio en móviles */
-        
+
+    .mini-content {
+        background-color: rgb(63, 143, 163);
+        width: 90% !important;
+        /* Asegura que los elementos ocupen todo el ancho */
+        max-width: 400px;
+        width: 90%;
+        /* Hace que los elementos ocupen más espacio en móviles */
+
     }
-    .contactanos{
+
+    .contactanos {
         margin-top: 12px;
-        width: 90% !important;  /* Asegura que los elementos ocupen todo el ancho */
-        max-width: 400px; width: 90%; /* Hace que los elementos ocupen más espacio en móviles */
-    
+        width: 90% !important;
+        /* Asegura que los elementos ocupen todo el ancho */
+        max-width: 400px;
+        width: 90%;
+        /* Hace que los elementos ocupen más espacio en móviles */
+
     }
-    
+
     /* boton de navegacion  */
     .nav-toggle {
         display: block;
         cursor: pointer;
     }
-    .nav-menu-visible{
-    left: 0;
+
+    .nav-menu-visible {
+        left: 0;
+    }
+
+    #carrusel,
+    .galeria {
+        max-width: 100vw;
+        overflow-x: auto;
     }
 
     .galeria {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
+
     .formulario {
-        width: 90%; /* Formulario más grande en pantallas pequeñas */
+        width: 90%;
+        /* Formulario más grande en pantallas pequeñas */
         padding: 20px;
     }
 
     .input {
-        padding: 12px; /* Reducir el padding para pantallas más pequeñas */
+        padding: 12px;
+        /* Reducir el padding para pantallas más pequeñas */
     }
 
     .enviar {
@@ -219,10 +263,12 @@ body {
     width: 100%;
     height: 70%;
 
+
 }
 
 /* informaacion */
 #informacion {
+    margin-top: 20px;
     width: 100%;
     height: 30%;
 }
@@ -230,15 +276,17 @@ body {
 .textos-con-informacion {
     justify-content: space-around;
     display: flex;
-    flex-direction: row; /* o row, según cómo quieras acomodarlos */
+    flex-direction: row;
+    /* o row, según cómo quieras acomodarlos */
     gap: 16px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 100%;
     height: 50%;
 }
-.contenedores{
+
+.contenedores {
     box-shadow: 5px 8px 12px rgba(75, 65, 65, 0.1);
-    transition:  0.3s ease-in-out; 
+    transition: 0.3s ease-in-out;
     width: 30%;
     margin-bottom: 12px;
     margin-top: 12PX;
@@ -247,9 +295,12 @@ body {
     cursor: pointer;
     border-color: rgb(124, 107, 107);
 }
-.contenedores:hover{
-    transform: scale(1.1); /* Aumenta un 10% el tamaño */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra para más efecto */
+
+.contenedores:hover {
+    transform: scale(1.1);
+    /* Aumenta un 10% el tamaño */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    /* Aumenta la sombra para más efecto */
 
 }
 
@@ -276,28 +327,40 @@ body {
 }
 
 /* Carrusel*/
+/* Carrusel con scroll horizontal manual */
 #carrusel {
-    padding: 20px 0;
-   overflow: hidden; /* Esto es importante para que el contenido se mantenga en su lugar */
-    height: 400px; /* Fijamos una altura específica para el carrusel */
+    display: flex;
+    overflow-y: hidden;
+    width: 100%;
+    height: 300px;
+    scroll-snap-type: x mandatory;
+
+
 }
 
 .galeria {
     display: flex;
-    overflow: hidden;
-    
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    height: 300px;
+    scrollbar-width: none;
 }
 
 .gallery {
-    width: 100%;
-    height: 100%;
-    margin-right: 10px;
-    background: rgba(228, 220, 220, 0.866);
+    background-color: #f39c12;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 230px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-.imagenes-carrusel {
+.carousel-slide {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .gallery:before {
@@ -308,40 +371,38 @@ body {
     color: white;
 }
 
-.carousel-slide {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
 /* Estilos generales para el formulario */
 #formulario-pagina {
-    margin-top: 170px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Centra verticalmente */
-    padding: 0 20px;
-    background-color: rgb(106, 154, 18); /* Fondo suave */
+    min-height: 60vh;
+    /* Centra verticalmente */
+    padding: 0 10px;
 }
 
 .formulario {
-    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    background-color: rgb(255, 255, 255);
+    /* Fondo blanco */
     padding: 40px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
     width: 100%;
-    max-width: 500px; /* Maxima anchura */
+    max-width: 500px;
+    /* Maxima anchura */
     text-align: center;
     box-sizing: border-box;
-    margin: 60px auto 0;
+    margin: 10px;
 }
 
 .formulario h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333; /* Color de texto */
+    color: #333;
+    /* Color de texto */
     font-weight: bold;
 }
 
@@ -369,7 +430,8 @@ body {
 .enviar {
     width: 100%;
     padding: 15px;
-    background-color: #3498db; /* Color de fondo del botón */
+    background-color: #3498db;
+    /* Color de fondo del botón */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -379,8 +441,10 @@ body {
 }
 
 .enviar:hover {
-    background-color: #7ec5c8; /* Color cuando el botón es hovered */
+    background-color: #7ec5c8;
+    /* Color cuando el botón es hovered */
 }
+
 /*contendor Conceptos sobre nosotros */
 .contenedor-conceptos {
     display: flex;
@@ -389,16 +453,18 @@ body {
     height: 300px;
     margin-top: 20px;
 
-    
+
 }
-.texto-conceptos1{
+
+.texto-conceptos1 {
     padding-top: 20px;
     color: rgb(103, 88, 88);
     display: flex;
     justify-content: center;
-    
+
 }
-.texto-conceptos2{
+
+.texto-conceptos2 {
     margin-right: 40px;
     padding-top: 40px;
     color: rgb(103, 88, 88);
@@ -408,49 +474,55 @@ body {
     height: 370px;
     width: 100%;
 }
+
 /* Estilos para apartado de contactos*/
-.contactos-redes-sociales{
+.contactos-redes-sociales {
     display: flex;
     width: 100%;
     height: 270p;
 }
-.contactos{
-    margin-top: 25px;
+
+.contactos {
+    margin-top: 15px;
+    padding-bottom: 12px;
     width: 100%;
-    height: 170p;
     display: flex;
     justify-content: space-around;
 }
-.informacion-contacto{
+
+.informacion-contacto {
     padding-top: 22px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     color: rgb(0, 0, 0);
-    margin-left: 40px; 
-   
+    margin-left: 40px;
+
 }
-.contactanos{
+
+.contactanos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:  space-around;
-    background-color:  white;
+    justify-content: space-around;
+    background-color: white;
     width: 40%;
     height: 280px;
     border-radius: 5px;
 }
-.mini-content{
-    background-color:  rgb(238, 242, 243);
+
+.mini-content {
+    background-color: rgb(238, 242, 243);
     width: 80%;
     height: 170px;
     border-radius: 5px;
     margin-bottom: 12px;
     display: flex;
     flex-direction: column;
-    
+
 }
-.facebook{
+
+.facebook {
     margin-top: 14px;
     margin-left: 12px;
     color: rgb(113, 100, 100);
@@ -458,7 +530,8 @@ body {
     font-weight: bold;
     font-size: 22px;
 }
-.instagram{
+
+.instagram {
     margin-top: 14px;
     margin-left: 12px;
     color: rgb(80, 70, 70);
@@ -466,14 +539,16 @@ body {
     font-weight: bold;
     font-size: 22px;
 }
-.direccion{
+
+.direccion {
     margin-top: 8px;
     margin-left: 12px;
     color: #866e6e;
     text-decoration: none;
     font-size: 15px;
 }
-.encuentranos{
+
+.encuentranos {
     margin-top: 12px;
     margin-bottom: 12px;
     text-align: center;
@@ -481,13 +556,19 @@ body {
     font-size: 22px;
     color: white;
 }
+
 /* Estilos para el footer */
 #footer {
-    background-color: #d7d7d7; /* Fondo oscuro */
-    color: rgb(68, 64, 64); /* Texto blanco */
-    padding: 20px 0; /* Espaciado alrededor */
-    text-align: center; /* Centrado del texto */
-    margin-top: 30px; /* Espaciado superior */
+    background-color: #d7d7d7;
+    /* Fondo oscuro */
+    color: rgb(68, 64, 64);
+    /* Texto blanco */
+    padding: 20px 0;
+    /* Espaciado alrededor */
+    text-align: center;
+    /* Centrado del texto */
+    margin-top: 30px;
+    /* Espaciado superior */
 
 }
 
@@ -509,13 +590,17 @@ body {
 }
 
 .footer-links a {
-    color: #4f4242; /* Color blanco para los enlaces */
-    text-decoration: none; /* Eliminar subrayado */
+    color: #4f4242;
+    /* Color blanco para los enlaces */
+    text-decoration: none;
+    /* Eliminar subrayado */
     margin: 0 15px;
     font-size: 16px;
 }
 
 .footer-links a:hover {
-    color: #f39c12; /* Color dorado cuando el usuario pasa el mouse sobre el enlace */
-    transition: color 0.3s ease; /* Transición suave */
+    color: #f39c12;
+    /* Color dorado cuando el usuario pasa el mouse sobre el enlace */
+    transition: color 0.3s ease;
+    /* Transición suave */
 }

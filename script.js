@@ -28,26 +28,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-/*Carrusel automático*/
-let index = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-
-function mostrarCarrusel() {
-    slides.forEach((slide, i) => {
-        slide.style.display = 'none';
-    });
-
-    index++;
-    if (index > slides.length) {
-        index = 1;
-    }
-
-    slides[index - 1].style.display = 'block';
-    setTimeout(mostrarCarrusel, 3000); // Cambiar cada 3 segundos
-}
-
-mostrarCarrusel();
-
 
 // Envío del formulario por EmailJS
 document.getElementById('form').addEventListener('submit', function (e) {
@@ -61,7 +41,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
 
     if (email && nombre && asistencia) {
         // Usamos EmailJS para enviar el correo
-        emailjs.sendForm('service_lcuxlrw', 'template_46iooef', '#form')
+        emailjs.sendForm('service_zkmicx9', 'template_d0lgwbb', '#form')
             .then(function (response) {
                 alert('¡Formulario enviado con éxito!');
             }, function (error) {
