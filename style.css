@@ -31,13 +31,14 @@ iframe {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 
 }
 
 .imagen-logo {
-    width: 100%;
-    height: 50px;
-    padding-top: 20px;
+    width: 79%;
+    height: 70px;
+    padding-top: 5px;
     margin-left: 12px;
 
 }
@@ -155,7 +156,7 @@ iframe {
     }
 
     .textos-con-informacion {
-        margin-top: 40px;
+        margin-top: 20px;
         display: flex;
         /* Asegura que el contenedor use flex */
         flex-direction: column;
@@ -297,18 +298,17 @@ iframe {
 .contenedores {
     box-shadow: 5px 8px 12px rgba(75, 65, 65, 0.1);
     transition: 0.3s ease-in-out;
-    width: 30%;
+    width: 32%;
     margin-bottom: 12px;
     margin-top: 12PX;
     background-color: rgb(255, 255, 255);
-    border-radius: 12px;
+    border-radius: 11px;
     cursor: pointer;
-    border-color: rgb(124, 107, 107);
+    border-color: rgb(50, 50, 50);
 }
 
 .contenedores:hover {
-    transform: scale(1.1);
-    /* Aumenta un 10% el tamaño */
+    transform: scale(1.2);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
     /* Aumenta la sombra para más efecto */
 
@@ -318,7 +318,6 @@ iframe {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
-    text-align: justify;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 25px;
@@ -329,7 +328,6 @@ iframe {
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 16px;
-    text-align: justify;
     text-align: center;
     font-family: sans-serif;
     font-size: 20px;
@@ -344,6 +342,7 @@ iframe {
     width: 100%;
     height: 300px;
     scroll-snap-type: x mandatory;
+    z-index: 1;
 
 }
 
@@ -376,7 +375,7 @@ iframe {
 }
 
 .gallery:hover .carousel-slide {
-    transform: scale(1.2); /* Aumenta la imagen dentro del contenedor */
+    transform: scale(1.3); /* Aumenta la imagen dentro del contenedor */
 }
 
 .carousel-slide {
@@ -484,6 +483,7 @@ iframe {
     color: rgb(103, 88, 88);
     display: flex;
     justify-content: center;
+    font-size: 30px;
 
 }
 
@@ -491,9 +491,9 @@ iframe {
     margin-right: 40px;
     padding-top: 40px;
     color: rgb(103, 88, 88);
-    display: flex;
     justify-content: center;
-    font-size: 20px;
+    text-align: center;
+    font-size: 22px;
     height: 370px;
     width: 100%;
 }
@@ -554,15 +554,6 @@ iframe {
     font-size: 22px;
 }
 
-.instagram {
-    margin-top: 14px;
-    margin-left: 12px;
-    color: rgb(80, 70, 70);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 22px;
-}
-
 .direccion {
     margin-top: 8px;
     margin-left: 12px;
@@ -586,18 +577,18 @@ iframe {
     /* Fondo oscuro */
     color: rgb(68, 64, 64);
     /* Texto blanco */
-    padding: 20px 0;
+    padding: 5px 0;
     /* Espaciado alrededor */
     text-align: center;
     /* Centrado del texto */
-    margin-top: 30px;
+    margin-top: 40px;
     /* Espaciado superior */
 
 }
 
 .footer-content {
-    border: 12px;
-    border-bottom-right-radius: #b74040;
+    border: 10px;
+    border-bottom-right-radius: #000000;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -605,7 +596,13 @@ iframe {
 
 .footer-content p {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 0.5px;
+}
+
+.footer-desarrolladores {
+    font-size: 11px!important; /* O prueba con 12px si lo quieres aún más pequeño */
+    color: #666; /* Opcional: un gris más tenue para diferenciarlo */
+    margin-top: 10px;
 }
 
 .footer-links {
